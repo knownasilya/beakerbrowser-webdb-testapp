@@ -2,6 +2,8 @@
 
 Uses beakerbrowser + webdb + DatArchive to create a self-mutating webapp.
 
+https://warmish.hashbase.io (dat://warmish.hashbase.io)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
