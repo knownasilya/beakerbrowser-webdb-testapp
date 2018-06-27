@@ -1,7 +1,6 @@
-# warmish
+# test-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Uses beakerbrowser + webdb + DatArchive to create a self-mutating webapp.
 
 ## Prerequisites
 
