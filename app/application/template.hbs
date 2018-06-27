@@ -1,0 +1,24 @@
+{{outlet}}
+<ul>
+  {{#each people as |person|}}
+    <li>
+      {{person.firstName}} {{person.lastName}}
+      {{#if person.age}}
+        ({{person.age}})
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>
+
+<form {{action 'add' on='submit'}}>
+  <input placeholder='first' value={{firstName}} oninput={{action (mut firstName) value='target.value'}}>
+  <input placeholder='last' value={{lastName}} oninput={{action (mut lastName) value='target.value'}}>
+  <input placeholder='age' type='number' min=0 value={{age}} oninput={{action (mut age) value='target.value'}}>
+
+
+  <button>Add</button>
+</form>
+
+<hr>
+
+<button type='button' onclick={{action 'deleteAll'}}>Delete All</button>
